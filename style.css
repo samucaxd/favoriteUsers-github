@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --fc-primary: #FFFFFF;
+    --primary-color: #092D38;
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background: black;
+}
+
+#app {
+    max-width: 1120px;
+    margin: 7rem auto;
+    padding: 2rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.search input {
+    padding: 1.6rem 15rem 1.6rem 1.6rem;
+    max-width: 40rem;
+    background-color: #06181C;
+    border: none;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: var(--fc-primary);
+}
+
+.search button {
+    background-color: #065E7C;
+    padding: 1.2rem 4rem;
+    align-items: center;
+    gap: 1rem;
+    
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    
+
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    color: var(--fc-primary);
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.search button:hover {
+    filter: brightness(1.4);
+}
+
+table {
+    margin-top: 8.7rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead tr {
+    color: var(--fc-primary);
+    background: var(--primary-color);
+
+}
+
+thead tr th {
+    padding: 1.6rem;
+    font-family: var(--font-family);
+    text-align: left;
+}
+
+thead tr th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+table tr th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+tbody img {
+    width: 5.6rem;
+    border-radius: 50%;
+}
+
+tbody td {
+    padding: 3rem;
+    color: var(--fc-primary);
+    font-family: var(--font-family);
+}
+
+tbody tr {
+    border-collapse: collapse;
+    border: 1px solid #4a808c73;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user a {
+    color: var(--fc-primary);
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+.user p {
+    font-weight: bold;
+}
+
+.action button {
+    background: none;
+    border: none;
+
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #F75A68;
+
+    cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #06161b81;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #06181C;
+}
+
+tbody tr:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
